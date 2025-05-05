@@ -11,3 +11,7 @@
     margin-top: 4px;
 }
     
+.faq-help-title {
+    width: 200px;
+    word-break: break-all;
+}
