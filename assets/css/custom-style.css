@@ -22,18 +22,27 @@
 .facility-icon svg{
     height: 70px;
 }
-
-
-.mt-icon-box-wraper:hover{
-    background: #020d26 !important;
-    color: #FFFFFF !important;
+.bg-gray-imp {
+    background-color: #f5f6f6 !important;
 }
 
-.mt-icon-box-wraper:hover h4{
-    color: #FFFFFF !important;
+#Amenities {
+    .mt-icon-box-wraper:hover{
+        background-color: #152854 !important;
+        color: #FFFFFF !important;
+    }
+
+    .mt-icon-box-wraper:hover h4{
+        color: #FFFFFF !important;
+    }
+
+    .mt-icon-box-wraper:hover svg{
+        color: #FFFFFF !important;
+    }
 }
 
-.mt-icon-box-wraper:hover svg{
-    color: #FFFFFF !important;
+#core-values .mt-icon-box-wraper svg{
+    color: #020d26 !important;
+    color: #ff5e14;
+    width: 80%;
 }
-
