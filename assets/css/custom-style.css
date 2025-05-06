@@ -15,3 +15,25 @@
     width: 200px;
     word-break: break-all;
 }
+.site-font-primary
+{
+    color: #ff5e14;
+}
+.facility-icon svg{
+    height: 70px;
+}
+
+
+.mt-icon-box-wraper:hover{
+    background: #020d26 !important;
+    color: #FFFFFF !important;
+}
+
+.mt-icon-box-wraper:hover h4{
+    color: #FFFFFF !important;
+}
+
+.mt-icon-box-wraper:hover svg{
+    color: #FFFFFF !important;
+}
+
