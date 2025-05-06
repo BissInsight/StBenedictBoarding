@@ -43,6 +43,122 @@
 
 #core-values .mt-icon-box-wraper svg{
     color: #020d26 !important;
-    color: #ff5e14;
+   /* color: #ff5e14;  */
     width: 80%;
 }
+
+
+
+.loading_progress-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading_progress-cross {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+  }
+  
+  .loading_progress-cross::before,
+  .loading_progress-cross::after {
+    content: '';
+    position: absolute;
+    background-color: #465f98;
+  }
+  
+  /* Vertical Bar */
+  .loading_progress-cross::before {
+    width: 20px;
+    height: 100px;
+    left: 40px;
+    top: 0;
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+  
+  /* Horizontal Bar */
+  .loading_progress-cross::after {
+    width: 100px;
+    height: 20px;
+    top: 40px;
+    left: 0;
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #465f98;
+      transform: scale(1);
+    }
+    100% {
+      background-color: #ff5e14;
+      transform: scale(1.1);
+    }
+  }
+
+
+
+
+  .cross-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+  }
+  
+  /* Cross */
+  .cross-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cross-vertical {
+    position: absolute;
+    width: 20px;
+    height: 140px;
+    background-color: #5b4636;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  .cross-horizontal {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    background-color: #5b4636;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  /* Animated Sun Rays */
+  .sun-rays {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    background: repeating-conic-gradient(
+      rgba(255, 223, 0, 0.6) 0deg 2deg,
+      transparent 2deg 10deg
+    );
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinRays 4s linear infinite;
+    z-index: 1;
+  }
+  
+  /* Animation */
+  @keyframes spinRays {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
